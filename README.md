@@ -7,7 +7,6 @@ A Django-based Invoice Management System that allows users to create, manage, an
 - **Invoice Management**: Create, read, update, and delete invoices.
 - **Client Management**: Add, edit, and delete clients.
 - **Export Invoices**: Export invoices as PDF or CSV.
-- **Email Invoices**: Send invoices directly via email.
 - **Authentication**: Secure API endpoints with token-based authentication.
 - **User-Specific Data**: Users can only access their own invoices.
 
