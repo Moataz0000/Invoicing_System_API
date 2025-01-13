@@ -2,6 +2,9 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 import random
 import string
+from django.contrib.auth.models import User
+
+
 
 class Client(models.Model):
     name = models.CharField(max_length=255)
@@ -28,8 +31,10 @@ class Invoice(models.Model):
         PAID = 'PAID', _('Paid')
         OVERDUE = 'OVERDUE', _('Overdue')
         
-        
     invoice_number = models.CharField(max_length=10, unique=True, blank=True)
+    logo = models.ImageField(upload_to='invoices/', blank=True, null=True)
+    business_name = models.CharField(max_length=50, null=True)
+    business_website = models.URLField(null=True)
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name='invoices')
     status = models.CharField(max_length=10, choices=Status.choices, default=Status.DRAFT)
     issued_date = models.DateField()
