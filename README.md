@@ -37,3 +37,8 @@ A Django-based Invoice Management System that allows users to create, manage, an
 | `/api/clients/<client_id>/`           | GET    | Retrieve a specific client               |
 | `/api/clients/<client_id>/`           | PUT    | Update a specific client                 |
 | `/api/clients/<client_id>/`           | DELETE | Delete a specific client                 |
+
+
+## Invoice As A PDF
+
+![Screenshot from 2025-01-13 09-30-37](https://github.com/user-attachments/assets/bba5380d-abb8-4ff0-af43-11ed3fefdaac)
